@@ -129,7 +129,11 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosImpares(int[] array) 
 	{
-		System.out.print("");
+	    for (int numero : array) {
+	        if (numero % 2 != 0) { 
+	            System.out.print(numero + " ");
+	        }
+	    }
 	}
 	
 	
