@@ -50,8 +50,12 @@ public class RespostaListaExercicio {
 	 */
 	public static int maiorEntreDoisInteiros(int a, int b) 
 	{	
-		
-		return 0;
+		if (a > b) {
+			return a;
+		} else if (b > a) {
+			return b;
+		}
+		return b;
 	}
 	
 	/**
@@ -141,7 +145,8 @@ public class RespostaListaExercicio {
 	 * @return media
 	 */
 	public static float calcularMediaAritmetica(int[] array) 
-	{
+	{	
+		
 		return 0f;
 	}
 	
