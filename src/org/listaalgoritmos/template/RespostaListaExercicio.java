@@ -1,7 +1,6 @@
 package org.listaalgoritmos.template;
 
 
-
 public class RespostaListaExercicio {
 	
 	/*
@@ -101,10 +100,10 @@ public class RespostaListaExercicio {
 	public static void imprimirArrayInverso(int[] array)
 	{
 		for (int i = array.length - 1; i >= 0; i--) {
-	        System.out.print(array[i]);
+	        System.out.println(array[i]);
 	        
 	        if (i != 0) {
-	            System.out.print(", ");
+	            System.out.println(", ");
 	        }
 	    }
 	}
@@ -117,9 +116,12 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosPrimos(int[] array) 
 	{
-		for(int i = 0; i < array.length; i++){
-			if(ehPrimo(array[i])){
-				system.out.print(array [i] + "");
+		for(int i = array.length - 1; i >= 0; i--) {
+			
+			if(i > 0) {
+				System.out.println(array[i]+ ",");
+			} else {
+				System.out.println(array[i]);
 			}
 		}
 	}
@@ -148,7 +150,7 @@ public class RespostaListaExercicio {
 	{
 	    for (int numero : array) {
 	        if (numero % 2 != 0) { 
-	            System.out.print(numero + " ");
+	            System.out.println(numero + " ");
 	        }
 	    }
 	}
@@ -164,7 +166,7 @@ public class RespostaListaExercicio {
 	{
 	    for (int numero : array) {
 	        if (numero % 2 == 0) {
-	            System.out.print(numero + " ");
+	            System.out.println(numero + " ");
 	        }
 	    }
 	}
@@ -179,7 +181,7 @@ public class RespostaListaExercicio {
 	public static void imprimirMaiorMenorElemento(int[] array) 
 	{
 	    if (array.length == 0) {
-	        System.out.print("Array vazio.");
+	        System.out.println("Array vazio.");
 	        return;
 	    }
 
@@ -195,7 +197,7 @@ public class RespostaListaExercicio {
 	        }
 	    }
 
-	    System.out.print(maior + " " + menor + " ");
+	    System.out.println(maior + " " + menor + " ");
 	}
 	
 	/**
