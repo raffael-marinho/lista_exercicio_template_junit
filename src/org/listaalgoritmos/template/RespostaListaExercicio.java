@@ -36,9 +36,8 @@ public class RespostaListaExercicio {
 	 */
 	public static float calcularAreaTrapezio(float baseMaior, float baseMenor, float altura) 
 	{	
-		float area = ((baseMaior + baseMenor) * altura) / 2; 
-		
-		return area;
+		float areaTrapezio = ((baseMaior + baseMenor) * altura) / 2;
+		return areaTrapezio;
 	}
 	
 	/**
@@ -50,7 +49,8 @@ public class RespostaListaExercicio {
 	 * @return maiorValor
 	 */
 	public static int maiorEntreDoisInteiros(int a, int b) 
-	{
+	{	
+		
 		return 0;
 	}
 	
