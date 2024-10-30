@@ -117,9 +117,26 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosPrimos(int[] array) 
 	{
-		System.out.print("");
+		for(int i = 0; i < array.length; i++){
+			if(ehPrimo(array[i])){
+				system.out.print(array [i] + "");
+			}
+		}
 	}
 	
+	public static boolean ehPrimo (int num)
+	{
+		if(num <= 1){
+			return false;
+		}
+		for(int i = 2; i<= Math.sqrt(num); i++){
+			if(num % i == 0){
+				return false;
+			}
+		}
+
+		return true;
+	} 
 	
 	/**
 	 * Método deve imprimir os elementos ímpares de um array de inteiros. O formato da impressão 
