@@ -164,8 +164,16 @@ public class RespostaListaExercicio {
 	 */
 	public static float calcularMediaAritmetica(int[] array) 
 	{	
+	    int soma = 0;
+
+	    for (int numero : array) {
+	        soma += numero;
+	    }
+
+	    float media = (float) soma / array.length;
+	    
+	    return media;
 		
-		return 0f;
 	}
 	
 }
