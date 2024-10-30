@@ -153,7 +153,24 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirMaiorMenorElemento(int[] array) 
 	{
-		System.out.print("");
+	    if (array.length == 0) {
+	        System.out.print("Array vazio.");
+	        return;
+	    }
+
+	    int maior = array[0];
+	    int menor = array[0];
+
+	    for (int numero : array) {
+	        if (numero > maior) {
+	            maior = numero;
+	        }
+	        if (numero < menor) {
+	            menor = numero;
+	        }
+	    }
+
+	    System.out.print(maior + " " + menor + " ");
 	}
 	
 	/**
