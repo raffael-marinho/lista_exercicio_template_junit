@@ -67,7 +67,11 @@ public class RespostaListaExercicio {
 	 */
 	public static boolean verificarParImpar(int numero) 
 	{
-		return false;		
+		if (numero % 2 == 0) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 	
 	/**
