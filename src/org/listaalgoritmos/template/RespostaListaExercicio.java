@@ -81,7 +81,15 @@ public class RespostaListaExercicio {
 	 * @return media
 	 */
 	public static float calcularMediaNotas(float[] notas) {
-		return 0f;
+	    float soma = 0f;
+
+	    for (float nota : notas) {
+	        soma += nota;
+	    }
+
+	    float media = soma / notas.length;
+	    
+	    return media;
 	}
 	
 	/**
