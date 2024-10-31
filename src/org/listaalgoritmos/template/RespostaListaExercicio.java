@@ -68,7 +68,9 @@ public class RespostaListaExercicio {
 	{
 		if (numero % 2 == 0) {
 			return true;
-		} else {
+		} else if(numero == 0){
+			return false;
+		}else {
 			return false;
 		}
 	}
@@ -100,10 +102,9 @@ public class RespostaListaExercicio {
 	public static void imprimirArrayInverso(int[] array)
 	{
 		for (int i = array.length - 1; i >= 0; i--) {
-	        System.out.println(array[i]);
-	        
+	        System.out.print(array[i]);
 	        if (i != 0) {
-	            System.out.println(", ");
+	            System.out.print(",");
 	        }
 	    }
 	}
@@ -116,14 +117,11 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosPrimos(int[] array) 
 	{
-		for(int i = array.length - 1; i >= 0; i--) {
-			
-			if(i > 0) {
-				System.out.println(array[i]+ ",");
-			} else {
-				System.out.println(array[i]);
-			}
-		}
+		for (int i = 0; i < array.length; i++) {
+	        if (ehPrimo(array[i])) {
+	            System.out.print(array[i] + " ");
+	        }
+	    }
 	}
 	
 	public static boolean ehPrimo (int num)
@@ -148,9 +146,9 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosImpares(int[] array) 
 	{
-	    for (int numero : array) {
-	        if (numero % 2 != 0) { 
-	            System.out.println(numero + " ");
+		for (int numero : array) {
+	        if (numero % 2 != 0) {
+	            System.out.print(numero + " ");
 	        }
 	    }
 	}
@@ -164,9 +162,9 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosPares(int[] array) 
 	{
-	    for (int numero : array) {
+		for (int numero : array) {
 	        if (numero % 2 == 0) {
-	            System.out.println(numero + " ");
+	            System.out.print(numero + " ");
 	        }
 	    }
 	}
