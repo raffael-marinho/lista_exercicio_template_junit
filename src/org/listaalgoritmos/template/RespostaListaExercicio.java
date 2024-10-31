@@ -103,7 +103,7 @@ public class RespostaListaExercicio {
 	{
 		for (int i = array.length - 1; i >= 0; i--) {
 	        System.out.print(array[i]);
-	        if (i != 0) {
+	        if (i != 0) { // Adiciona vírgula apenas se não for o último elemento
 	            System.out.print(",");
 	        }
 	    }
@@ -178,7 +178,7 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirMaiorMenorElemento(int[] array) 
 	{
-	    if (array.length == 0) {
+		if (array.length == 0) {
 	        System.out.println("Array vazio.");
 	        return;
 	    }
@@ -195,7 +195,7 @@ public class RespostaListaExercicio {
 	        }
 	    }
 
-	    System.out.println(maior + " " + menor + " ");
+	    System.out.print(maior + " " + menor + " ");
 	}
 	
 	/**
