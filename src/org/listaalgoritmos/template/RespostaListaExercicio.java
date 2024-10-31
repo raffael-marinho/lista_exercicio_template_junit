@@ -103,7 +103,7 @@ public class RespostaListaExercicio {
 	{
 		for (int i = array.length - 1; i >= 0; i--) {
 	        System.out.print(array[i]);
-	        if (i != 0) { // Adiciona vírgula apenas se não for o último elemento
+	        if (i != 0) {
 	            System.out.print(",");
 	        }
 	    }
